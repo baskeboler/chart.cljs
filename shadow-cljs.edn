@@ -1,0 +1,13 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src/dev"
+  "src/main"
+  "src/test"]
+
+ :dependencies
+ [[reagent "1.0.0-rc1"]]
+
+ :builds
+ {:app {:target :browser
+        :output-dir "public/js"
+        :modules {:main {:entries [chart-cljs.core]}}}}}
