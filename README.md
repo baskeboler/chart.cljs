@@ -13,7 +13,9 @@ Reagent component for  [Chart.js](https://www.chartjs.org/)
     :options             {:title {:display true
                                   :text    "Pepsi vs Coke Sales"}}
     :maintainAspectRatio false
-    :data                {:labels   ["Jan" "Feb" "Mar" "Apr" "May" "Jun" "Jul" "Aug" "Sep" "Oct" "Nov" "Dec"]
+    :data                {:labels   ["Jan" "Feb" "Mar" "Apr" "May" 
+                                     "Jun" "Jul" "Aug" "Sep" "Oct" 
+                                     "Nov" "Dec"]
                           :datasets [{:data            (repeatedly 12 #(rand-int 500))
                                       :label           "Pepsi"
                                       :backgroundColor "#FF0000"}
